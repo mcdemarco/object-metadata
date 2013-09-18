@@ -21,8 +21,8 @@ the user's paste tags and sections.
           "tags":[
             "tech","ponies"
           ],
-          "sections":[
-            "tech"
+          "section":[
+            "Technology"
           ]
         }
       }
@@ -37,12 +37,13 @@ the user's paste tags and sections.
 | Field | Required? | Type | Description |
 | ----- | --------- | ---- | ----------- |
 | `tags` | Optional | list of strings | Zero or more identifiers the user has used to categorize their pastes. |
-| `sections` | Optional | list of strings | Zero or more of the user's tags intended for grouping of pastes in the UI. |
+| `section` | Optional | string | A title for a new channel of pastes. |
 
 ## Notes
 
-Tags are free-form and user-determined; sections are used by the app to aid in the display of pastes.
-Applications should keep the sections list up-to-date and may update the tags list for tag auto-completion or other purposes. 
+Tags are free-form and user-determined; sections are used by the app to organize pastes.
+If more than one channel lacks a section title, the older channels may be ignored by the app.
+Applications may update the tags list for tag auto-completion or other purposes. 
 
 <!-- provide a way to contact you -->
 ## Maintainers
